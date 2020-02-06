@@ -2,7 +2,8 @@
 #include <ctype.h>
 
 /**
-* main - function that prints all single digit numbers of base 10 starting from 0
+* main - function that prints all single digit 
+* numbers of base 10 starting from 0
 * Return: Always 0 Success
 */
 
