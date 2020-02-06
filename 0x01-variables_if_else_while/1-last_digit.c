@@ -15,6 +15,8 @@ int main(void)
 	char lessSixNotZero[30] = "and is less than 6 and not 0";
 	char isZero[10] = "and is 0";
 
+	last = n % 10;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (last > 5)
