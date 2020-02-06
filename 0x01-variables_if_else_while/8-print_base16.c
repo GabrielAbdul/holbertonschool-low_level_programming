@@ -10,7 +10,7 @@ int main(void)
 {
 	int x;
 	int y;
-	
+
 	for (x = 48; x < 58; x++)
 	{
 		putchar(x);
@@ -18,7 +18,7 @@ int main(void)
 	for (y = 'a'; y < 'g'; y++)
 	{
 		putchar(y);
-	} 
+	}
 
 	putchar('\n');
 
