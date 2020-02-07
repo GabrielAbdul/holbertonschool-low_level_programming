@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <ctype.h>
+#define ZERO 48
+#define COMMA 44
+#define SPACE 32
 
 /**
 * main - prints all possible combination of single digit #
@@ -10,14 +12,24 @@
 int main(void)
 {
 	int x;
+	int y;
 
-	for (x = 48; x < 58; x++)
+	for (x = ZERO; x <= '9'; x++)
 	{
-		putchar(x);
-		if (x < 57)
+		for (y = ZERO; y <= '9'; y++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(x);
+			putchar(y);
+			if ((y == '9') && (x == '9'))
+			{
+			}
+			else
+			{
+			putchar(COMMA);
+			putchar(SPACE);
+			}
+			
+
 		}
 	}
 
