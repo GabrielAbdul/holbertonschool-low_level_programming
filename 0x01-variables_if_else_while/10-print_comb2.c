@@ -28,11 +28,8 @@ int main(void)
 			putchar(COMMA);
 			putchar(SPACE);
 			}
-			
-
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
