@@ -17,12 +17,11 @@ int main(void)
 	for (x = ZERO; x <= '8'; x++)
 	{
 		for (y = ZERO; y <= '9'; y++)
-		{	if ( x != y )
-			{
+		{	
 				
-				putchar(x);
-				putchar(y);
-				if ((y == '9') && (x == '8'))
+				putchar(x + ZERO);
+				putchar(y + ZERO);
+				if ((y == 9) && (x == 8))
 				{
 				}
 				else
@@ -30,7 +29,6 @@ int main(void)
 				putchar(COMMA);
 				putchar(SPACE);
 				}
-			}
 		}	
 	}
 	putchar('\n');

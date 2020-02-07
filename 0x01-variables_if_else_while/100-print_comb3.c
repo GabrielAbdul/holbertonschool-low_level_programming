@@ -8,7 +8,7 @@ int main(void)
 	int first;
 	int last;
 
-	for (first = '0'; first <= '8'; first ++)
+	for (first = '0'; first <= '8'; first++)
 	{
 		for (last = first + 1; last <= '9'; last++)
 		{
