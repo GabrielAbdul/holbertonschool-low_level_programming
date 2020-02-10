@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <ctype.h>
+#define LOWERa 97
+#define LOWERz 122
+#define NEWLINE 10
 
 /**
 * main - prints a-z in reverse using putchar
@@ -10,12 +12,12 @@ int main(void)
 {
 	int x;
 
-	for (x = 'z'; x >= 'a'; x--)
+	for (x = LOWERz; x >= LOWERa; x--)
 	{
 		putchar(x);
 	}
 
-	putchar('\n');
+	putchar(NEWLINE);
 
 	return (0);
 }
