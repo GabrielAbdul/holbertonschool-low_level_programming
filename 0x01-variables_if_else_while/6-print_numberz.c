@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
+#define ZERO 48
+#define TEN 58
+#define NEWLINE 10
 
 /**
 * main - function that prints all single digit
@@ -9,13 +12,13 @@
 
 int main(void)
 {
-	int x = 48;
+	int x = ZERO;
 
-	while (x < 58)
+	while (x < TEN)
 	{
 		putchar(x);
 		x++;
 	}
-	putchar(10);
-	return (0);
+	putchar(NEWLINE);
+	return (ZERO);
 }
