@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+#define ZERO 48
+#define TEN 58
+#define LOWERa 97
+#define LOWERg 103
+#define NEWLINE 10
 
 /**
 * main - prints all the numbers of base 16 in lowercase
@@ -9,18 +14,17 @@
 int main(void)
 {
 	int x;
-	int y;
 
-	for (x = 48; x < 58; x++)
+	for (x = ZERO; x < TEN; x++)
 	{
 		putchar(x);
 	}
-	for (y = 'a'; y < 'g'; y++)
+	for (x = LOWERa; x < LOWERg; x++)
 	{
-		putchar(y);
+		putchar(x);
 	}
 
-	putchar('\n');
+	putchar(NEWLINE);
 
 	return (0);
 }
