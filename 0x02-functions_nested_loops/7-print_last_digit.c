@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define ZERO 48
 
 /**
  * print_last_digit - prints the last digitr of a numebr
@@ -11,17 +12,17 @@ int print_last_digit(int x)
 {
 	int last;
 	int negLast;
-	
+
 	last = (x % 10);
 	negLast = -last;
 	if (x > 0)
 	{
-		_putchar(last);
+		_putchar(last + ZERO);
 		return (last);
 	}
 	else
 	{
-		_putchar(negLast);
+		_putchar(negLast + ZERO);
 		return (negLast);
 	}
 }
