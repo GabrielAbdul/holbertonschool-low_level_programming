@@ -9,9 +9,19 @@
 
 int print_last_digit(int x)
 {
-	int x;
 	int last;
-
+	int negLast;
+	
 	last = (x % 10);
-	_putchar(last);
+	negLast = -last;
+	if (x > 0)
+	{
+		_putchar(last);
+		return (last);
+	}
+	else
+	{
+		_putchar(negLast);
+		return (negLast);
+	}
 }
