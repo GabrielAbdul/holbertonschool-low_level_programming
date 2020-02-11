@@ -12,8 +12,12 @@ int main(void)
 {
 	int i;
 	char holberton[9] = "Holberton";
-	for (i = 0; i < holberton[i]; i++)
+	int strLn = sizeof(holberton);
+
+	for (i = 0; i < strLn; i++)
+	{
 		_putchar(holberton[i]);
+	}
 	_putchar(NEWLINE);
 	return (0);
 }
