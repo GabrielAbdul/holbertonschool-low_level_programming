@@ -6,9 +6,9 @@
  * Return: (void)
  */
 
-_abs(int)
+int _abs(int)
 {
-	if (int > 0)
+	if (int >= 0)
 	{
 		return (int);
 	}
