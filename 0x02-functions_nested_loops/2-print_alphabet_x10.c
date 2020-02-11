@@ -14,7 +14,11 @@ void print_alphabet(void)
 		_putchar(i);
 	_putchar('\n');
 }
-
+/**
+ * print_alphabet_x10 - calls print_alphabet 10 times.
+ *
+ * Return: (void) 
+ */
 
 void print_alphabet_x10(void)
 {
