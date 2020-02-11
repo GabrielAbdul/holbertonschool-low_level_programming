@@ -1,9 +1,7 @@
-#define NEWLINE ('\n')
-#include <unistd.h>
 #include "holberton.h"
 
 /**
- * main - 
+ * main - Prints Holberton followed by a newline
  *
  * Return: 0 Sucess.
  * On error, -1 is returned, and errno is set appropriately.
@@ -18,6 +16,6 @@ int main(void)
 	{
 		_putchar(holberton[i]);
 	}
-	_putchar(NEWLINE);
+	_putchar('\n');
 	return (0);
 }
