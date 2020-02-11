@@ -2,9 +2,9 @@
 
 /**
  * print_sign - returns 1, 0, or -1 depending if n is >, <, or = 0
- * 
+ *
  * @n: number input by user
- * 
+ *
  * Return: (void)
 */
 
