@@ -17,7 +17,7 @@ void print_alphabet(void)
 /**
  * print_alphabet_x10 - calls print_alphabet 10 times.
  *
- * Return: (void) 
+ * Return: (void)
  */
 
 void print_alphabet_x10(void)
