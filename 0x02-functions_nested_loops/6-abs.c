@@ -2,18 +2,18 @@
 
 /**
  * _abs(int) - function that computes the absolute value of and integer
- * @int: integer input by user
+ * @x: integer input by user
  * Return: (void)
  */
 
-int _abs(int)
+int _abs(int x)
 {
-	if (int >= 0)
+	if (x >= 0)
 	{
-		return (int);
+		return (x);
 	}
 	else
 	{
-		return (int * -1);
+		return (x * -1);
 	}
 }
