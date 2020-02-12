@@ -1,5 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
+#include <unistd.h>
 
 int _putchar(char c);
 
@@ -17,5 +18,5 @@ int _abs(int);
 
 int print_last_digit(int);
 
-int jack_bauer(void);
+void jack_bauer(void);
 #endif
