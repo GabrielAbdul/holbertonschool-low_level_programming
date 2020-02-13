@@ -2,7 +2,7 @@
 
 /**
  * print_square - function that draws a diagonal line on the terminals
- * @n: integer input by user
+ * @size: integer input by user
  * Return: (void)
  */
 
@@ -13,7 +13,7 @@ void print_square(int size)
 
 	if (size <= 0)
 		_putchar('\n');
-	
+
 
 	for (x = 0; x <= size - 1; x++)
 	{

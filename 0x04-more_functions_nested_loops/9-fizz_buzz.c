@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizz-buzz - Write a program that prints the numbers from 1 to 100, followed by a new line. 
- * But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz.
+ * main - Write a program that prints the numbers from 1 to 100,
+ * followed by a new line. But for multiples of three print Fizz inst
+ * ead of the number and for the multiples of five print Buzz.
  * For numbers which are multiples of both three and five print FizzBuzz.
  *
- * @n: integer input by user
  * Return: (void)
  */
 int main(void)
@@ -24,7 +24,7 @@ int main(void)
 		else if (x % 5 == 0)
 			printf("Buzz ");
 			}
-		
+
 	printf("\n");
-	return 0;
+	return (0);
 }

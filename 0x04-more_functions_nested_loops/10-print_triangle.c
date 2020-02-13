@@ -11,7 +11,6 @@ void print_triangle(int size)
 	int rows;
 	int cols;
 	int spaces;
-	int a = 0, b = 0;
 
 	if (size <= 0)
 		_putchar('\n');
@@ -20,11 +19,11 @@ void print_triangle(int size)
 	for (rows = 0; rows <= size - 1; rows++)
 	{
 
-		for (spaces = size - cols; spaces <= size; spaces++)
+		for (spaces = 0; spaces < size; spaces++)
 		{
 			_putchar(' ');
 		}
-		for (cols = size - spaces; cols <= size - 1; cols++)
+		for (cols = 0; cols < size; cols++)
 		{
 			_putchar('#');
 		}	
