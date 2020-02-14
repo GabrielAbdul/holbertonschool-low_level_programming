@@ -27,7 +27,7 @@ int main(void)
 			printf(" ");
 		else
 			break;
-	}	
+	}
 
 	printf("\n");
 	return (0);
