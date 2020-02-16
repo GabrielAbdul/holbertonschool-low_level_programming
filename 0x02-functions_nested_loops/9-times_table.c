@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			int result = first * last;
 
-			if (result < 10 && result != 0)
+			if (result < 10 && last != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -35,10 +35,6 @@ void times_table(void)
 			else
 			{
 				_putchar(result = '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-
 			}
 
 		}
