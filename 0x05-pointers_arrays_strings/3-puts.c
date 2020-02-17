@@ -1,8 +1,8 @@
 #include "holberton.h"
 
-/*
+/**
  * _puts - functino that prints a string
- *@*s: character input by a user
+ * @str: string input by a user
  * Return: (void)
  */
 

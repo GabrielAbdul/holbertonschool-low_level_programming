@@ -1,8 +1,10 @@
 #include "holberton.h"
 
-/*
- * reset_to_98 - functino that takes a pointer to an int
+/**
+ * swap_int - function that swaps the value of two integers
  * as a parameter and updates the value it points to to 98
+ * @a: first integer input by user to be switched
+ * @b: second integer input by user to be switched
  *
  * Return: (void)
  */
