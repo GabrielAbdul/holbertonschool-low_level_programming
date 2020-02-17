@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define ZERO 48
+#define NINE 57
 #define COMMA 44
 #define SPACE 32
 
@@ -11,27 +12,22 @@
 
 int main(void)
 {
-	int x;
-	int y;
+	int first;
+	int last;
 
-	for (x = ZERO; x <= '8'; x++)
+	for (first = ZERO; first <= NINE; first++)
 	{
-		for (y = ZERO; y <= '9'; y++)
-		{	if ( x != y )
+		for (last = ZERO; last <= NINE; last++)
+		{
+			putchar(first);
+			putchar(last);
+			if ((first < NINE) || (last < NINE))
 			{
-				
-				putchar(x);
-				putchar(y);
-				if ((y == '9') && (x == '8'))
-				{
-				}
-				else
-				{
 				putchar(COMMA);
 				putchar(SPACE);
-				}
 			}
-		}	
+		}
+
 	}
 	putchar('\n');
 
