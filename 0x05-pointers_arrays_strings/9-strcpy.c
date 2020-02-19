@@ -4,7 +4,8 @@
 /**
  * _strcpy - function that copies the string pointed to by *src
  * , including the terminating null byte, to the buffer pointed to by dest
- * @a: name of array
+ * @dest: copied string
+ * @src: string to be copied
  * Return: (void)
  */
 
@@ -20,9 +21,9 @@ char *_strcpy(char *dest, char *src)
 	_putchar('\n');
 }
 
-/*
- * strlen - functino that returs the length of a string
- *@*s: string input by a user
+/**
+ * _strlen - functino that returs the length of a string
+ * @s: string input by a user
  * Return: (void)
  */
 
