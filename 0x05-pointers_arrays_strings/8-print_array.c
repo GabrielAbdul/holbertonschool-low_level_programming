@@ -8,15 +8,13 @@
  * Return: (void)
  */
 
-void puts_half(int *a, int n)
+void print_array(int *a, int n)
 {
-	int i;
-	int arrayLength;
+	int i = 0;
 
-	arrayLength = sizeof(a) / sizeof(a[0]);
+	for (; i <= n; i++)
+		printf("%d, \n", a[i]);
 
-	for (i = 0; i <= arrayLength; i++)
-		printf(
 }
 
 	
