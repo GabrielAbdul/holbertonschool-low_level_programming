@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncat - function that copies a string.
+ * _strncpy - function that copies a string.
  * @dest: string that will get src copied to it
  * @src: string to be copied
  * @n: size limiter of src string
