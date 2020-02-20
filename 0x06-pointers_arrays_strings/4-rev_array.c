@@ -1,24 +1,27 @@
 #include "holberton.h"
 
 /**
- * _strcmp - function that compares two strings..
- * @s1: string that will get src copied to it
- * @s2: string to be copied
+ * reverse_array - function that reverses the contant
+ * of an array of integers.
+ * @a: integer array
+ * @n: number of elements in the array
  * Return: Ascii value of the difference of s1 and s2
  */
 
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	while ((*s1 != '\0' && *s2 != '\0' && *s1 == *s2))
+	int start = 0;
+	int end = n - 1;
+	int tmp;
+
+
+	while (start <= end)
 	{
-		*s1++;
-		*s2++;
+		tmp = a[start];
+		a[start] = a[end];
+		a[end] = tmp;
+		start++;
+		end--;
+
 	}
-
-		result = (*s1 - *s2);
-		if (*s1 == *s2)
-			return (0);
-		return (result);
-
 }
-
