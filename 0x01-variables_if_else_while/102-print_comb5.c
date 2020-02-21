@@ -17,7 +17,7 @@ int main(void)
 		{
 			putchar((first / 10) + '0');
 			putchar((first % 10) + '0');
-			putchar(SPACE);
+			putchar(' ');
 			putchar((last / 10) + '0');
 			putchar((last % 10) + '0');
 			if (first == 98 && last == 99)
