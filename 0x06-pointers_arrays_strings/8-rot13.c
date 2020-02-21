@@ -11,6 +11,7 @@ char *rot13(char *s)
 	int i, j;
 	char input[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char output[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	j = 0;
 
 	for (i = 0; s[i] != '\0'; i++, j++)
