@@ -1,9 +1,4 @@
 #include <stdio.h>
-#define ZERO 48
-#define EIGHT 56
-#define NINE 57
-#define COMMA 44
-#define SPACE 32
 
 /**
 * main - prints zero to 89 with no repeating integers
@@ -16,19 +11,23 @@ int main(void)
 	int first;
 	int last;
 
-	for (first = ZERO; first <= EIGHT; first++)
+	for (first = 0; first <= 98; first++)
 	{
-		for (last = first + 1; last <= NINE; last++)
+		for (last = first + 1; last <= 99; last++)
 		{
-			putchar(first);
-			putchar(last);
-			if ((first == EIGHT) && (last == NINE))
+			putchar((first / 10) + '0');
+			putchar((first % 10) + '0');
+			putchar(SPACE);
+			putchar((last / 10) + '0');
+			putchar((last % 10) + '0');
+			if (first == 98 && last == 99)
 			{
+				putchar('\n');
 			}
 			else
 			{
-			putchar(COMMA);
-			putchar(SPACE);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
