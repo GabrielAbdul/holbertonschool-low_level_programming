@@ -19,6 +19,7 @@ char *leet(char *s)
 			if (s[i] == alpha[j])
 			{
 				s[i] = num[j];
+				break;
 			}
 
 		}
