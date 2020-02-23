@@ -13,22 +13,25 @@ int main(void)
 
 	unsigned long firstNum;
 	unsigned long secondNum;
-	int count;
 	unsigned long temp;
+	unsigned long sum;
+	int count;
 
 	firstNum = 1;
-	secondNum = 2;
+	secondNum = 1;
 
-	printf("%ld, %ld", firstNum, secondNum);
-
-	for (count = 0; count < 30; count++)
+	for (count = 0; count <= 30; count++)
 	{
 		temp = firstNum + secondNum;
 		firstNum = secondNum;
 		secondNum = temp;
 		if (temp % 2 == 0)
-			printf(", %ld", temp);
+		{
+			sum += temp;
+		}
 	}
+	printf("%ld", sum);
+
 	printf("\n");
 
 	return (0);
