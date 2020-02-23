@@ -14,13 +14,13 @@ int main(void)
 	unsigned long firstNum;
 	unsigned long secondNum;
 	unsigned long temp;
-	unsigned long sum;
+	unsigned long sum = 2;
 	int count;
 
 	firstNum = 1;
-	secondNum = 1;
+	secondNum = 2;
 
-	for (count = 0; count <= 30; count++)
+	for (count = 0; count < 30; count++)
 	{
 		temp = firstNum + secondNum;
 		firstNum = secondNum;
@@ -30,9 +30,6 @@ int main(void)
 			sum += temp;
 		}
 	}
-	printf("%ld", sum);
-
-	printf("\n");
-
+	printf("%ld\n", sum);
 	return (0);
 }
