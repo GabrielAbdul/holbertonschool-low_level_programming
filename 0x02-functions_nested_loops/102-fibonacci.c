@@ -14,23 +14,21 @@ int main(void)
 	unsigned long firstNum;
 	unsigned long secondNum;
 	int count;
-	int temp;
+	unsigned long temp;
 
 	firstNum = 1;
 	secondNum = 2;
 
 	printf("%ld, %ld", firstNum, secondNum);
 
-	for (count = 0; count <= 46; count++)
+	for (count = 0; count <= 47; count++)
 	{
 
 		temp = secondNum;
 		secondNum = firstNum + secondNum;
 		firstNum = temp;
 
-		if (count < 46)
-			printf(", ");
-		printf("%ld",  secondNum);
+		printf(", %ld",  secondNum);
 	}
 	printf("\n");
 }
