@@ -21,14 +21,14 @@ int main(void)
 
 	printf("%ld, %ld", firstNum, secondNum);
 
-	for (count = 0; count <= 47; count++)
+	for (count = 0; count <= 48; count++)
 	{
-
-		temp = secondNum;
-		secondNum = firstNum + secondNum;
-		firstNum = temp;
-
-		printf(", %ld",  secondNum);
+		temp = firstNum + secondNum;
+		firstNum = secondNum;
+		secondNum = temp;
+		printf(", %ld", temp);
 	}
 	printf("\n");
+
+	return (0);
 }
