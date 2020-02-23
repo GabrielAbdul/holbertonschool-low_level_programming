@@ -21,7 +21,7 @@ int main(void)
 
 	printf("%ld, %ld", firstNum, secondNum);
 
-	for (count = 0; count <= 48; count++)
+	for (count = 0; count <= 47; count++)
 	{
 		temp = firstNum + secondNum;
 		firstNum = secondNum;
