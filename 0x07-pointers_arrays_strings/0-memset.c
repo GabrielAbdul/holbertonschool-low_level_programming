@@ -3,8 +3,8 @@
 /**
  * _memset - takes n number of bytes
  * of s and replaces it with n bytes of b
- * @s: 
- *
+ * @b: character to set
+ * @s: string to replace
  */
 
 char *_memset(char *s, char b, unsigned int n)

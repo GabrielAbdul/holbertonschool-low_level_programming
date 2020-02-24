@@ -4,7 +4,7 @@
  * _strchr - locates a character in a strings
  *
  * @c: character to locate
- * @s: input string to look for c in 
+ * @s: input string to look for c in
  *
  * Return: pointer to dest
  */
