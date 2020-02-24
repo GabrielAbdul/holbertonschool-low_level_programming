@@ -11,6 +11,8 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
+	char *r = s;
+
 	while (n > 0)
 	{
 	/* *s == s[0] */
@@ -20,5 +22,5 @@ char *_memset(char *s, char b, unsigned int n)
 	/* n is number of bytes */
 		n--;
 	}
-	return (s);
+	return (r);
 }
