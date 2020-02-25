@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _strpbrk - prints everything after and including first occurence
- * of character found in accept
- * @accept: string of characters
- * @s: string to search
- * Return: string
+ * _strstr - function that locates a substringe
+ *
+ * @haystack: string to search
+ * @needle: string of characters to check haystack with
+ * Return: haystack
  */
 
 char *_strstr(char *haystack, char *needle)
