@@ -4,7 +4,7 @@
  * is_palindrome - function that returns 1 if n is a palindrome
  * otherwise return 0
  *
- * @n: integer test prime
+ * @s: input string
  * Return: int
  */
 
@@ -15,7 +15,7 @@ int is_palindrome(char *s)
 
 	len = _strlen(s);
 	if (s[0] != s[len - 1])
-		return 0;
+		return (0);
 	if (len % 2 == 0)
 	{
 		start = (len / 2) - 1;
@@ -29,7 +29,7 @@ int is_palindrome(char *s)
 	{
 		start = 0;
 		end = len - 1;
-		for (j = 0; s[start] == s[end]; start++, end --)
+		for (j = 0; s[start] == s[end]; start++, end--)
 			if (s[start] == s[end])
 				return (1);
 			j++;
