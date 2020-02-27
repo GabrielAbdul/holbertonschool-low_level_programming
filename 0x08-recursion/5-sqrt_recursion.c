@@ -8,10 +8,8 @@
 
 int _sqrt_recursion(int n)
 {
-	int sqr;
 
-	sqr = _pow(1, n);
-	return (sqr);
+	return (_pow(1, n));
 }
 
 /**
