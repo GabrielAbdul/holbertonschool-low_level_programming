@@ -13,12 +13,14 @@ int is_palindrome(char *s)
 	int len;
 	int i = 1;
 
+	_putchar(*s);
 	len = _strlen_recursion(s);
 
 	if (*s != s[len - 1])
 		return (0);
-	if (*s == s[len - i--])
+	if (*s == s[len - --i])
 		is_palindrome(s + 1);
+
 
 	return (1);
 }
