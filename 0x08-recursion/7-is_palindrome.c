@@ -25,19 +25,19 @@ int is_palindrome(char *s)
 
 
 
+#include "holberton.h"
+
 /**
- * _strlen - function that returs the length of a string
- *@s: string input by a user
- * Return: (void)
+ * _strlen_recursion - function that returns the length of a string.
+ *
+ * @s: input string to find length
+ *
+ * Return: int
  */
 
-int _strlen(char *s)
+int _strlen_recursion(char *s)
 {
-	int len;
-
-	for (len = 0; s[len] != '\0'; len++)
-		continue;
-
-	return (len);
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
 }
-
