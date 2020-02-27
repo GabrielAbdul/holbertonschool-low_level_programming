@@ -10,33 +10,20 @@
 
 int is_palindrome(char *s)
 {
-	int j, len;
-	int start, mid, end;
+	int len;
+	int i = 1;
 
 	len = _strlen(s);
-	if (s[0] != s[len - 1])
-		return (0);
-	if (len % 2 == 0)
-	{
-		start = (len / 2) - 1;
-		mid = len / 2;
-		for (j = 0; s[start] == s[mid]; start--, mid++)
-			if (j == len)
-				return (1);
-			j++;
-	}
-	if (len % 2 == 1)
-	{
-		start = 0;
-		end = len - 1;
-		for (j = 0; s[start] == s[end]; start++, end--)
-			if (s[start] == s[end])
-				return (1);
-			j++;
-	}
-	return (1);
 
+	if (*s != s[len - 1])
+		return (0);
+	if (*s == s[len - i--])
+		is_palindrome(*(s + i));
+
+	return (1);
 }
+
+
 
 /**
  * _strlen - function that returs the length of a string
@@ -53,3 +40,4 @@ int _strlen(char *s)
 
 	return (len);
 }
+
