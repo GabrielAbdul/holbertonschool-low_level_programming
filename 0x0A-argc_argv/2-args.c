@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * @argv:
- * @argc:
+ * main - prints every argument entered followed by a new line
+ * @argv: string array of command line arguments entered
+ * @argc: number of arguments
  *
  * Return: int
  */
@@ -18,6 +18,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 		i++;
-	}	
-	return (0);	
+	}
+	return (0);
 }

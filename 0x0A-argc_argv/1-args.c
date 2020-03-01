@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * @argv:
- * @argc:
+ * main - prints number of arguments entered
+ * @argv: string array of arguments entered
+ * @argc: number of arguments entered
  *
  * Return: int
  */

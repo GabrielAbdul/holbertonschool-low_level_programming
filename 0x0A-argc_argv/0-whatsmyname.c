@@ -1,10 +1,10 @@
-#include "holberton.h"
+#incl#include "holberton.h"
 #include <stdio.h>
 
 /**
- * main - entry point
- * @argv:
- * @argc:
+ * main - function that prints it's name out
+ * @argv: string array of arguments entered at runtime
+ * @argc: number of command line arguemtns entered at runtime
  *
  * Return: int
  */
