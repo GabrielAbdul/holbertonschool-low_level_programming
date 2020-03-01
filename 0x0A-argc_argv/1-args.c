@@ -12,7 +12,10 @@
 int main(int argc, __attribute__ ((unused))char *argv[])
 {
 
-	printf("%d\n", argc);
-		
+	int counter, i = 1;
+
+	for (; i < argc; i++)
+		counter++;
+	printf("%d\n", counter);		
 	return (0);
 }
