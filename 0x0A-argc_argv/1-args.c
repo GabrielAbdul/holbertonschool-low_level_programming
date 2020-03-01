@@ -16,6 +16,6 @@ int main(int argc, __attribute__ ((unused))char *argv[])
 
 	for (; i < argc; i++)
 		counter++;
-	printf("%d\n", counter);		
+	printf("%d\n", counter);
 	return (0);
 }
