@@ -4,11 +4,11 @@
 #include <ctype.h>
 
 /**
+ * checker - verifies if each element in array of
+ * strings is a digit or not
+ * @argv: string
  *
- *
- *
- *
- *
+ * Return: int
  */
 
 int checker(char *argv)
@@ -18,7 +18,7 @@ int checker(char *argv)
 	for (; argv[i] != '\0'; i++)
 	{
 		if (isdigit(argv[i]) == 1)
-		{	
+		{
 			return (1);
 		}
 	}
@@ -26,6 +26,14 @@ int checker(char *argv)
 	return (0);
 }
 
+/**
+ * main - adds integers input at runtime
+ *
+ * @argc: number of args
+ * @argv: arguments as an array of strings
+ *
+ * Return: int
+ */
 
 int main(int argc, char *argv[])
 {
