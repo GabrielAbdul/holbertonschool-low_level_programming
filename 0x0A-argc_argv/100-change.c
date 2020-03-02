@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	intCent = (atoi(argv[1]));
 	if (intCent <= 0)
-		printf("0");
+		printf("0\n");
 	if (intCent > 0)
 	{
 		while (intCent >= 25)
