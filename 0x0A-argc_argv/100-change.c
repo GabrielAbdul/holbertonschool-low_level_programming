@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 	int intCent, coins = 0;
 
-	if (argc != 2)
+	if (argc >= 3 || argc == 1)
 	{
 		printf("Error\n");
 		return (1);
