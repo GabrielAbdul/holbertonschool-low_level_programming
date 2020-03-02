@@ -14,24 +14,18 @@
 
 int main(int argc, char *argv[])
 {
-	int intCent;
-	int coins = 0;
+	int intCent, coins = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	
 	intCent = (atoi(argv[1]));
-
 	if (intCent < 0)
 		printf("0");
 	if (intCent > 0)
 	{
-		
-
 		while (intCent >= 25)
 		{
 			intCent -= 25;
