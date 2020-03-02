@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int intCent = (atoi(argv[1]));
+	int intCent;
 	int coins = 0;
 
 	if (argc != 2)
@@ -22,10 +22,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
+	
+	intCent = (atoi(argv[1]));
+
 	if (intCent < 0)
 		printf("0");
 	if (intCent > 0)
 	{
+		
+
 		while (intCent >= 25)
 		{
 			intCent -= 25;
