@@ -14,14 +14,17 @@
 
 int main(int argc, char *argv[])
 {
-	int intCent, coins = 0;
+	int intCent, coins;
 
 	if (argc >= 3 || argc == 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
 	intCent = (atoi(argv[1]));
+	coins = 0;
+
 	if (intCent <= 0)
 		printf("0\n");
 	if (intCent > 0)
@@ -46,12 +49,8 @@ int main(int argc, char *argv[])
 			intCent -= 2;
 			coins++;
 		}
-		while (intCent >= 1)
-		{
-			intCent -= 1;
-			coins++;
-		}
+
 	}
-	printf("%d\n", coins);
+	printf("%d\n", coins + intCent);
 	return (0);
 }
