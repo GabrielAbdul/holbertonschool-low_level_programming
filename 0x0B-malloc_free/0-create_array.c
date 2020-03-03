@@ -1,15 +1,14 @@
 #include "holberton.h"
 #include <stdlib.h>
-
 /**
- * create_array - function that creates an array of chars
+ *create_array - function that creates an array of chars
  * and initializes it with a specific char.
  *
  * @size: size of character array (string)
  * @c: character to initialze every element in array with
  *
  * Return: pointer to the array
- */
+ **/
 
 char *create_array(unsigned int size, char c)
 {
@@ -18,9 +17,6 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	
-	if ((char *)malloc(sizeof(char) * size) == NULL))
-		return (*p);
 
 	p = (char *)malloc(sizeof(char) * size);
 
