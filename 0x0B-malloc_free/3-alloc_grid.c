@@ -11,6 +11,5 @@
  */
 
 char **alloc_grid(int width, int height)
-{
-	int **p;
+{	
 }
