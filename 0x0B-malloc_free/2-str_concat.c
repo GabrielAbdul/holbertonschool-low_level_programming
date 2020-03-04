@@ -7,7 +7,7 @@
  * @s1: input string that will be appeneded
  * @s2: input string that will append to s1
  *
- * Return:
+ * Return: p
  */
 
 char *str_concat(char *s1, char *s2)
@@ -18,10 +18,10 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[s1len])
 		s1len++;
-	
+
 	while (s2[s2len])
 		s2len++;
-
+	s2len++;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
