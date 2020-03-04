@@ -37,8 +37,9 @@ char *argstostr(int ac, char **av)
                         array[z] = av[i][len];
                         z++;
                 }
-                array[z] = "\n";
+                array[z] = '\n';
+		z++;
         }
-        array[z + 1] = '\0';
+        array[z] = '\0';
         return (array);
 }
