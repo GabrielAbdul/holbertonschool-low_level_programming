@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * str_concat - function that concatenates two strings
@@ -33,14 +32,12 @@ char *str_concat(char *s1, char *s2)
 	while (i < s1len)
 	{
 		p[i] = s1[i];
-		printf("%c\n", p[i]);
 		i++;
 	}
 	j = 0;
-	while (i <= catlen)
+	while (i < catlen)
 	{
 		p[i] = s2[j];
-		printf("%c\n", p[i]);
 		i++;
 		j++;
 	}
