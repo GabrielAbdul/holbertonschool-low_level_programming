@@ -41,5 +41,7 @@ char *argstostr(int ac, char **av)
 		z++;
         }
         array[z] = '\0';
+	if (array == NULL)
+		return (NULL);
         return (array);
 }
