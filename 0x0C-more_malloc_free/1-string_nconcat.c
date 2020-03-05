@@ -16,13 +16,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p;
 	unsigned int s1len, s2len, lens, i, j;
 
-	s1len = len(s1);
-	s2len = len(s2);
-	lens = s1len + s2len;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	
+	s1len = len(s1);
+	s2len = len(s2);
+	lens = s1len + s2len;
 	if (n >= lens)
 	{
 		str_concat(s1, s2);
