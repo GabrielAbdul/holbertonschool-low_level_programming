@@ -19,7 +19,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s1len = len(s1);
 	s2len = len(s2);
 	lens = s1len + s2len;
-
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	if (n >= lens)
 	{
 		str_concat(s1, s2);
@@ -95,7 +98,10 @@ char *str_concat(char *s1, char *s2)
 	catlen = s1len + s2len;
 	p = (char *)malloc(catlen + 1);
 	if (p == NULL)
+	{
+		free(p);
 		return (NULL);
+	}
 	i = 0;
 	while (i < s1len)
 	{
