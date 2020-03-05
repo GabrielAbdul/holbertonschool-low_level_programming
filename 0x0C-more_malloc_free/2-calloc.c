@@ -23,6 +23,30 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		free(p);
 		return (NULL);
 	}
-	memset(p, 0, nmemb * size);
+	_memset(p, 0, nmemb * size);
 	return (p);
+}
+
+
+/**
+ * *_memset - takes n number of bytes
+ * of s and replaces it with n bytes of b
+ * @b: character to set
+ * @s: string to replace
+ * @n: number of bytes to copy
+ * Return: s
+ */
+
+void *_memset(void *s, int b, unsigned int n)
+{
+	unsigned char *p;
+
+	p = s;
+
+	while (n--)
+	{
+		*p++ = (unsigned char)b;
+	}
+
+	return (s);
 }
