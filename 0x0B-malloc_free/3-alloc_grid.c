@@ -10,13 +10,13 @@
  * Return: pointer to a 2d array of integers
  */
 
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **p, i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	p = (int**)malloc(height * (sizeof(int *));
+	p = (int**)malloc(height * (sizeof(int *)));
 
 	if (p == NULL)
 	{
@@ -24,7 +24,7 @@ char **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	for (i = 0; i < height, i++)
+	for (i = 0; i < height; i++)
 	{
 		p[i] = (int*)malloc(width * sizeof(int));
 		if (p[i] == NULL)
@@ -33,10 +33,10 @@ char **alloc_grid(int width, int height)
 			{
 				free(p[i]);
 			}
-			free(array);
+			free(p);
 			return (NULL);
 		}
-		for (j = 0; l < width; j++)
+		for (j = 0; i < width; j++)
 		{
 			p[i][j] = 0;
 		}
