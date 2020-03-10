@@ -21,11 +21,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *namecpy = malloc((_strlen(name) + 1) * 1);
 	char *owncpy = malloc((_strlen(owner) + 1) * 1);
 
-	if (namecpy == NULL || owncpy == NULL || mydog == NULL)
+	if (my_dog == NULL)
 	{
-		free(namecpy);
-		free(owncpy);
 		free(my_dog);
+		return (NULL);
+	}
+
+	if (namecpy == NULL)
+	{
+		free(my_dog);
+		return (NULL);
+	}
+
+	if (owncpy == NULL)
+	{
+		free(owncpy);
 		return (NULL);
 	}
 
