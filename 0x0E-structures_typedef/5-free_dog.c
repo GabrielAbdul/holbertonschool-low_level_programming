@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * free_dog - function that frees a dog
@@ -10,9 +11,7 @@
 
 void free_dog(dog_t *d)
 {
-	int c;
-
-	for (c = 0; d->c != NULL; c++)
-		free(d->c);
+	free(d->name);
+	free(d->owner);
 	free(d);
 }
