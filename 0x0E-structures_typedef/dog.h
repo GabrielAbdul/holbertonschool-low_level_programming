@@ -6,7 +6,7 @@
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs (hopefully adopted) owner
- *
+ * @p: void p
  */
 
 struct dog
