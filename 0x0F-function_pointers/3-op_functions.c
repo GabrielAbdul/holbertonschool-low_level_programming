@@ -59,7 +59,7 @@ int op_div(int a, int b)
  * @a: int
  * @b: int
  *
- *
+ * Return: a % b
  */
 int op_mod(int a, int b)
 {
