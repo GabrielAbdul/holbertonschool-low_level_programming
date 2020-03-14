@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdarg.h>
 
 void print_char(va_list arg_list);
@@ -11,7 +10,7 @@ void print_string(va_list arg_list);
 /**
  * print_char - function that prints a character
  *
- * @arg_list - arguments to print
+ * @arg_list: arguments to print
  * Return: void
  */
 
@@ -25,7 +24,7 @@ void print_char(va_list arg_list)
 /**
  * print_integer - function that prints a character
  *
- * @arg_list - arguments to print
+ * @arg_list: arguments to print
  * Return: void
  */
 
@@ -39,7 +38,7 @@ void print_integer(va_list arg_list)
 /**
  * print_float - function that prints a character
  *
- * @arg_list - arguments to print
+ * @arg_list: arguments to print
  * Return: void
  */
 
@@ -53,7 +52,7 @@ void print_float(va_list arg_list)
 /**
  * print_string - function that prints a character
  *
- * @arg_list - arguments to print
+ * @arg_list: arguments to print
  * Return: void
  */
 
@@ -65,9 +64,12 @@ void print_string(va_list arg_list)
 
 
 /**
- * print_all = function that prints anything
- *
+ * print_all - function that prints anything
  * @format: list of types of arguments passed to the function
+ *
+ * Depending on what is input in format
+ * a different functino will be called to print a different
+ * data type
  *
  * Return: void
  */
@@ -95,7 +97,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (types[j].c)
 		{
-			if(*(types[j].c) == format[i])
+			if (*(types[j].c) == format[i])
 			{
 				types[j].fp(arg_list);
 				nextChar = i + 1;
