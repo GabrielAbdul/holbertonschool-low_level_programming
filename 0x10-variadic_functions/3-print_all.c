@@ -45,7 +45,7 @@ void print_integer(va_list arg_list)
 
 void print_float(va_list arg_list)
 {
-	printf("%d", va_arg(arg_list, int));
+	printf("%f", va_arg(arg_list, double));
 }
 
 
@@ -90,7 +90,6 @@ void print_all(const char * const format, ...)
 	va_start(arg_list, format);
 
 	i = 0;
-	nextChar = i + 1;
 	while (format[i])
 	{
 		j = 0;
@@ -99,6 +98,7 @@ void print_all(const char * const format, ...)
 			if(*(types[j].c) == format[i])
 			{
 				types[j].fp(arg_list);
+				nextChar = i + 1;
 				if (format[nextChar] != '\0')
 				{
 					printf("%s", comma);
