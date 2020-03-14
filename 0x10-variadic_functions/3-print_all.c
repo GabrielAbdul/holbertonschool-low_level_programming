@@ -56,10 +56,8 @@ void print_float(va_list arg_list)
  * Return: void
  */
 
-void print_string(va_list arg_list)
+void print_string(char *c)
 {
-	char *c;
-
 	c = va_arg(arg_list, char *);
 	if (c == NULL)
 	{
