@@ -63,8 +63,7 @@ void print_string(va_list arg_list)
 	c = va_arg(arg_list, char *);
 	if (c == NULL)
 	{
-		printf("(nil)");
-		return;
+		c = "(nil)";
 	}
 	printf("%s", c);
 
