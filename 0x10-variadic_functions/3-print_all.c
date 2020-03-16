@@ -56,9 +56,18 @@ void print_float(va_list arg_list)
  * Return: void
  */
 
-void print_string(char *c)
-{	
-	printf("%s", va_arg(arg_list, char *));
+void print_string(va_list arg_list)
+{
+
+	char *P;
+	p = va_arg(arg_list, char *);
+
+	if !(p)
+	{
+		p = "(nil)";
+	}
+
+	printf("%s", p);
 }
 
 
@@ -77,8 +86,8 @@ void print_string(char *c)
 void print_all(const char * const format, ...)
 {
 	va_list arg_list;
-	unsigned int i, j, nextChar;
-	char *comma = ", ";
+	unsigned int i, j;
+	char *comma = "";
 
 	formats types[] = {
 		{"c", print_char},
@@ -92,19 +101,15 @@ void print_all(const char * const format, ...)
 	va_start(arg_list, format);
 
 	i = 0;
-	while (format[i])
+	while (format[i] && format)
 	{
 		j = 0;
 		while (types[j].c)
 		{
 			if (*(types[j].c) == format[i])
 			{
+				printf("%s", comma);
 				types[j].fp(arg_list);
-				nextChar = i + 1;
-				if (format[nextChar] != '\0')
-				{
-					printf("%s", comma);
-				}
 			}
 		j++;
 		}
