@@ -17,14 +17,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *p;
 
-	p = va_arg(strings_list, char *);
 	va_start(strings_list, n);
 
 	if (separator)
 	{
 		for (i = 0; i < n; i++)
 		{
-			 if (p == NULL)
+			p = va_arg(strings_list, char *);
+			if (p == NULL)
 				printf("(nil)%s", separator);
 			if (i == n - 1)
 			{
@@ -40,6 +40,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
+			p = va_arg(strings_list, char *);
 			if (p == NULL)
 				printf("(nil)");
 			printf("%s", p);
