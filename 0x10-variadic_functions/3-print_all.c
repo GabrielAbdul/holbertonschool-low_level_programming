@@ -60,6 +60,7 @@ void print_string(va_list arg_list)
 {
 
 	char *p;
+
 	p = va_arg(arg_list, char *);
 
 	if (!p)
