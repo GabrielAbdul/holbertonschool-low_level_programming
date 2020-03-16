@@ -15,18 +15,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings_list;
 	unsigned int i;
+	char *p;
 
+	p = va_arg(strings_list, char *);
 	va_start(strings_list, n);
 
 	if (separator)
 	{
 		for (i = 0; i < n; i++)
 		{
-			/* if (va_arg(strings_list, char*) == NULL)
-				printf("(nil)%s", separator); */
+			 if (p == NULL)
+				printf("(nil)%s", separator);
 			if (i == n - 1)
 			{
-				printf("%s", va_arg(strings_list, char*));
+				printf("%s", p);
 				break;
 			}
 
@@ -38,9 +40,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			/* if (va_arg(strings_list, char*) == NULL)
-				printf("(nil)"); */
-			printf("%s", va_arg(strings_list, char*));
+			if (p == NULL)
+				printf("(nil)");
+			printf("%s", p);
 		}
 		printf("\n");
 	}
