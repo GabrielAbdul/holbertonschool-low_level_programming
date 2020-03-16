@@ -110,6 +110,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", comma);
 				types[j].fp(arg_list);
+				comma = ", ";
 			}
 		j++;
 		}
