@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * add_node = adds node to the front of the linked list
- * 
+ * add_node - adds node to the front of the linked list
+ *
  * @head: first node in the linked list
  * @str: string to be duplicated
  *
@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *node_added = malloc(sizeof(list_t));
 
-	if (!head)
+	if (!node_added)
 		return (NULL);
 
 	node_added->str = strdup(str);
@@ -23,7 +23,7 @@ list_t *add_node(list_t **head, const char *str)
 	*head = node_added;
 
 	return (*head);
-	
+
 }
 /**
  * _strlen - returns string length
