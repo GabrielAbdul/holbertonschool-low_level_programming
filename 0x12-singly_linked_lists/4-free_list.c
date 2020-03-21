@@ -10,14 +10,14 @@
  * Return: void
  */
 
-size_t print_list(const list_t *h)
+void free_list(list_t *head)
 {
 	list_t *node;
 
-	while (h)
+	while (head)
 	{
-		node = h;
-		h = h->next;
+		node = head;
+		head = head->next;
 		free(node);
 	}
 }
