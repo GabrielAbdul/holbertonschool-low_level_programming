@@ -10,5 +10,5 @@ main:
 	int 0x80
 section .data
 
-msg db 'Hello, world!',0xa,0
+msg db 'Hello, Holberton',0xa,0
 len equ $ - msg
