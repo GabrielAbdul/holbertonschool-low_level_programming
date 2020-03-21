@@ -1,9 +1,8 @@
-ssection .data
+section .data
 
-	msg db 'Hello, Holberton', 0xA, 0
+	msg db "Hello, Holberton", 0x0A
 	len equ $ - msg
 section .text
-
 	global main
 main:
 	mov edx, len
@@ -11,6 +10,7 @@ main:
 	mov ebx, 1
 	mov eax, 4
 	int 0x80
+	mov ebx, 0
 	mov eax, 1
 	int 0x80
 
