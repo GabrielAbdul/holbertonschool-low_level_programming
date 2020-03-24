@@ -14,11 +14,13 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *node; /* node pointing to head */
-	int head_data = node->n; /* assigning data of head to var */
+	int head_data; /* assigning data of head to var */
 
 	if (head == NULL || *head == NULL)
 		return (0);
-	node = (*head);
+
+	node = *head;
+	head_data = node->n;
 	(*head) = (*head)->next; /* move head to the next node in the list
 				  * orphaning original head
 				  */
