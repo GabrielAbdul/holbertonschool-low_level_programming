@@ -18,7 +18,7 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL || *head == NULL)
 		return (0);
-	node = *head;
+	node = (*head);
 	(*head) = (*head)->next; /* move head to the next node in the list
 				  * orphaning original head
 				  */
