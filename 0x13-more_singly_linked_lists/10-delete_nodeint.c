@@ -7,7 +7,7 @@
   * @head: address of var pointing to head
   * @index: node to delete
   *
-  *
+  * Return: 1 on success
   */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -17,7 +17,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (head == NULL || *head == NULL)
 		return (-1);
-	
+
 	node = *head;
 	if (index == 0)
 	{
@@ -39,5 +39,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 		free(tmp);
 	}
-	return (1);	
+	return (1);
 }
