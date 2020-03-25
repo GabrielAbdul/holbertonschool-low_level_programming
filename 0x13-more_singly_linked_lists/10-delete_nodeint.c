@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
-  * delete_nodeint_at_index
+  * delete_nodeint_at_index - function that deletes a node
   *
-  *
+  * @head: address of var pointing to head
+  * @index: node to delete
   *
   *
   */
@@ -14,21 +15,17 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *node, *tmp;
 	unsigned int count = 0;
 
-
 	if (head == NULL || *head == NULL)
-	{
-		free(*head);
 		return (-1);
-	}
-	if (idx == 0)
+	node = *head;
+	if (index == 0)
 	{
 		*head = (*head)->next;
-		free(*head);
+		free(node);
 	}
 	else
-	{	
-		node = *head;
-		while (count < idx)
+	{
+		while (count < index)
 		{
 			if (node->next == NULL)
 				return (-1);
@@ -40,7 +37,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(node);
 
 		node = *head;
-		for (count = 0; count < idx - 1; count++)
+		count = 0;
+		while (count < index - 1)
 		{
 			if (node->next == NULL)
 				return (-1);
