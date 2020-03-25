@@ -42,6 +42,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 				prev_node->next = node_to_add;
 				node_to_add->n = n;
 				node_to_add->next = node;
+				break;
 			}
 		}
 	}
