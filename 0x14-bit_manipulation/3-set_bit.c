@@ -19,7 +19,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		bit = (*n >> index) & 1;
 		if (bit == 0)
 			*n = *n | gloves;
-		return (1);
+		return (*n);
 	}
 	return (-1);
 
