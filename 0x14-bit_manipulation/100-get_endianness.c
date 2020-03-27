@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * get_endiannss - function that checks the endiannss
+  * get_endianness - function that checks the endiannss
   *
   *
   * Return: 1 or 0
