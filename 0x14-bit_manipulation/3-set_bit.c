@@ -17,7 +17,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index < sizeof(n) * 8)
 	{
 		bit = (*n >> index) & 1;
-		if (bit == 1)
+		if (bit == 0)
 			*n = *n | gloves;
 		return (1);
 	}
