@@ -15,7 +15,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *search, *node = malloc(sizeof(dlistint_t));
 
-	 if (!node)
+	if (!node)
 		return (NULL);
 
 	node->n = n;
