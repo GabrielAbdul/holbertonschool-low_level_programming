@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-#define USAGE ("Usage: cp file_from file_to")
+#define USAGE ("Usage: cp file_from file_to\n")
 #define SOURCE (argv[1])
 #define DEST (argv[2])
 #define NO_READ ("Error: Can't read from file %s\n")
