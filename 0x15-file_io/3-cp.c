@@ -25,20 +25,20 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, USAGE), exit(97);
 
 	source = open(SOURCE, O_RDONLY);
-	if (!source)
-		dprintf(STDERR_FILENO, NO_READ), exit(98);
+	if (source == -1)
+		dprintf(STDERR_FILENO, NO_READ, SOURCE), exit(98);
 	dest = open(DEST, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (!dest)
-		dprintf(STDERR_FILENO, NO_READ), exit(98);
+	if (dest == -1)
+		dprintf(STDERR_FILENO, NO_READ, DEST), exit(98);
 
-	while (read_bytes = read(source, buf, 1024) > 0)
+	while ((read_bytes = read(source, buf, 1024)) > 0)
 		write_bytes = write(dest, buf, read_bytes);
 
-	if (!read_bytes)
+	if (read_bytes == -1)
 		dprintf(STDERR_FILENO, NO_READ, SOURCE), exit(98);
 
-	if (!write_bytes)
-		dprintf(STDERR_FILENO, NO_WRITE, DEST), exit(99)
+	if (write_bytes == -1)
+		dprintf(STDERR_FILENO, NO_WRITE, DEST), exit(99);
 
 	if (close(source) == -1)
 		dprintf(STDERR_FILENO, NO_CLOSE, source), exit(100);
