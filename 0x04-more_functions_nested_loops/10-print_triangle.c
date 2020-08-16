@@ -14,21 +14,12 @@ void print_triangle(int size)
 
 	if (size <= 0)
 		_putchar('\n');
-	
-
-	for (rows = 0; rows <= size - 1; rows++)
+	for (rows = 0; rows < size; rows++)
 	{
-
-		for (spaces = rows - 1; spaces < size; spaces++)
-		{
+		for (spaces = size - rows; spaces > 1; spaces--)
 			_putchar(' ');
-		}
-		for (cols = spaces - 1; cols < size; cols++)
-		{
+		for (cols = 0; cols <= rows; cols++)
 			_putchar('#');
-		}	
-	
 	_putchar('\n');
 	}
-
 }
